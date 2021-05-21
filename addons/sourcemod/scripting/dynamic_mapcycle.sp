@@ -164,10 +164,12 @@ public Action Timer_Global(Handle timer){
         tmpMaplist.Close();
         Kv_mapConfigs.GoBack();
         Kv_mapConfigs.GoBack();
+        delete Kv_mapConfigs;
         return;
     } while (Kv_mapConfigs.GotoNextKey());
 
     LogError("No adequate mapcycle found for current server conditions.");
+    delete Kv_mapConfigs;
     return;
 }
 
