@@ -1,6 +1,6 @@
 # sourcemod-mapchooser-extended
-Extended version of the SourceMod MapChooser  
-2021 version with Dynamic Mapcycle support - changes the mapcycle on the fly based on game state. :) 
+
+MapChooser Extended  2021 version with Dynamic Mapcycle support - changes the mapcycle on the fly based on game state. :) 
 
 --------------------------
 
