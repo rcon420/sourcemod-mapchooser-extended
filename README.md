@@ -3,7 +3,7 @@ Extended version of the SourceMod MapChooser
 2021 version with Dynamic Mapcycle support - changes the mapcycle on the fly based on game state. :) 
 
 --------------------------
-==========================
+
 --------------------------
 
 Before installing anything read Original Installation Guide - https://forums.alliedmods.net/showthread.php?t=156974 (But don't download plugins from there).
@@ -13,7 +13,7 @@ I don't need Dynamic Mapcycle support?
 Use this - https://github.com/Totenfluch/sourcemod-mapchooser-extended
 
 --------------------------
-==========================
+
 --------------------------
 
 What this version has changed?
@@ -26,7 +26,7 @@ What this version has changed?
 All those changes are related to dynamic_mapcycle.smx.
 
 --------------------------
-==========================
+
 --------------------------
 
 How to install dynamic_mapcycle? (Note: everything is pre configured in this repo already.)
