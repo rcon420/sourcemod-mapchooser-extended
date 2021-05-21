@@ -17,7 +17,7 @@ What this version has changed?
 - Modified mapchooser_extended.smx
 - Modified nominations_extended.smx
 - Added dynamic_mapcycle.smx
-- Pre configured (If you don't like it simply edit configs :) )
+- Pre configured (If you don't like it simply edit / remove configs :) )
 
 All those changes are related to dynamic_mapcycle.smx.
 
