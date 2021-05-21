@@ -39,3 +39,5 @@ How to install dynamic_mapcycle? (Note: everything is pre configured in this rep
 
 ------
 
+No future updates planned yet. 
+
