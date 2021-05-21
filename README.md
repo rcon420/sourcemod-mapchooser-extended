@@ -1,6 +1,7 @@
 # sourcemod-mapchooser-extended
 
 MapChooser Extended  2021 version with Dynamic Mapcycle support - changes the mapcycle on the fly based on the game state. :) 
+https://forums.alliedmods.net/showthread.php?p=2747424#post2747424
 
 --------------------------
 
