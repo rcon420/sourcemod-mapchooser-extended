@@ -6,7 +6,7 @@ Extended version of the SourceMod MapChooser
 
 Before installing anything read Original Installation Guide - https://forums.alliedmods.net/showthread.php?t=156974 (But don't download plugins from there).
 
-I don't need Dynamic Mapcycle support?
+- I don't need Dynamic Mapcycle support?
 
 Use this - https://github.com/Totenfluch/sourcemod-mapchooser-extended
 
