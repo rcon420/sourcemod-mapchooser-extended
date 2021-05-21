@@ -35,7 +35,7 @@ How to install dynamic_mapcycle? (Note: everything is pre configured in this rep
 
 4. Edit configs/mapchooser_extended/dynamic_mapcycle.cfg how you like. 
 
-dynamic_mapcycle.cfg has all the instrusctions how to use it. 
+- dynamic_mapcycle.cfg has all the instrusctions how to use it. 
 
 ------
 
