@@ -14,12 +14,14 @@ Use this - https://github.com/Totenfluch/sourcemod-mapchooser-extended
 
 What this version has changed?
 
+What this version has changed?
+
 - Modified mapchooser_extended plugin
 - Modified nominations_extended plugin
-- Added new dynamic_mapcycle plugin
-- Github repo pre-configured (If you don't like it simply edit/remove configs  )
+- Added new dynamic_mapcycle. plugin
+- Pre-configured (If you don't like it simply edit/remove configs :) )
 
-All those changes are related to dynamic_mapcycle
+All those changes are related to dynamic_mapcycle plugin
 
 TL;DR in human language - you can have map votes based on current server time, day of week & player count also it's excludes map from nomination menu if they cant be played with this modified map chooser extended version.
 
