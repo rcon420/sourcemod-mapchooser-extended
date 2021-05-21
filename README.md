@@ -21,7 +21,7 @@ What this version has changed?
 - Added new dynamic_mapcycle. plugin
 - Pre-configured (If you don't like it simply edit/remove configs :) )
 
-All those changes are related to dynamic_mapcycle plugin
+All those changes are related to the dynamic_mapcycle plugin
 
 TL;DR in human language - you can have map votes based on current server time, day of week & player count also it's excludes map from nomination menu if they cant be played with this modified map chooser extended version.
 
