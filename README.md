@@ -4,15 +4,11 @@ Extended version of the SourceMod MapChooser
 
 --------------------------
 
---------------------------
-
 Before installing anything read Original Installation Guide - https://forums.alliedmods.net/showthread.php?t=156974 (But don't download plugins from there).
 
 I don't need Dynamic Mapcycle support?
 
 Use this - https://github.com/Totenfluch/sourcemod-mapchooser-extended
-
---------------------------
 
 --------------------------
 
@@ -24,8 +20,6 @@ What this version has changed?
 - Pre configured (If you don't like it simply edit configs :) )
 
 All those changes are related to dynamic_mapcycle.smx.
-
---------------------------
 
 --------------------------
 
