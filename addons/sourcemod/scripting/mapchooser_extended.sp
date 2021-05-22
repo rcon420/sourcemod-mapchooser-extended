@@ -450,7 +450,19 @@ public OnMapStart()
 	{
 		g_RoundCounting = RoundCounting_ArmsRace;
 	}
+
+	g_TotalRounds = 0;
+	
+	g_Extends = 0;
+	
+	g_MapVoteCompleted = false;
+	
+	g_NominateCount = 0;
+	ClearArray(g_NominateList);
+	ClearArray(g_NominateOwners);
 }
+
+
 
 public OnConfigsExecuted()
 {
@@ -483,16 +495,6 @@ public OnConfigsExecuted()
 	
 	CreateNextVote();
 	SetupTimeleftTimer();
-	
-	g_TotalRounds = 0;
-	
-	g_Extends = 0;
-	
-	g_MapVoteCompleted = false;
-	
-	g_NominateCount = 0;
-	ClearArray(g_NominateList);
-	ClearArray(g_NominateOwners);
 	
 	for (new i=0; i<MAXTEAMS; i++)
 	{
