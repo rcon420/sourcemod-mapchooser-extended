@@ -71,7 +71,7 @@ public Action Timer_Global(Handle timer){
 
         if(!StrEqual(maxPlayers, "null") ){
             int iMaxPlayers = StringToInt(maxPlayers, 10);
-            if(!StrEqual(minPlayers, "null") && StringToInt(minPlayers, 10) < iMaxPlayers) {
+            if(!StrEqual(minPlayers, "null") && StringToInt(minPlayers, 10) > iMaxPlayers) {
                 LogError("Error at key %s. maxPlayers cannot be smaller than minPlayers", kName);
                 continue;
             }
