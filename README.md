@@ -43,7 +43,7 @@ How to install dynamic_mapcycle? (Note: everything is pre-configured in the repo
 
 - dynamic_mapcycle.cfg has all the instructions on how to use it.
 
-- for compiling use 1.7 or 1.8 sm because map chooser extended is quite old & needs to be rewritten.
+- for compiling I suggest using 1.7 sm because map chooser extended is quite old & needs to be rewritten but dynamic_mapcycle is written in the new style.
 
 ------
 
