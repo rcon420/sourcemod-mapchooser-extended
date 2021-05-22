@@ -15,8 +15,6 @@ Use this - https://github.com/Totenfluch/sourcemod-mapchooser-extended
 
 What this version has changed?
 
-What this version has changed?
-
 - Modified mapchooser_extended plugin
 - Modified nominations_extended plugin
 - Added new dynamic_mapcycle. plugin
