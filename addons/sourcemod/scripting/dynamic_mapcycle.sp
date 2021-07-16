@@ -1,20 +1,23 @@
 public Plugin myinfo = {
     name = "Dynamic Mapcycle",
-    author = "lugui - code & rcon420 - idea",
+    author = "lugui",
     description = "Changes the mapcycle on the fly based on game state.",
     version = "1.0.0",
-    url = "https://github.com/rcon420/sourcemod-mapchooser-extended",
 };
 
 ConVar cvarCfgFile;
 KeyValues Kv_mapConfigs;
 
+char logDir[512];
+
 public OnPluginStart() {
-    cvarCfgFile = CreateConVar("dmc_cfg_file", "configs/mapchooser_extended/dynamic_mapcycle.cfg", "Config file that will be used");
+    cvarCfgFile = CreateConVar("dmc_cfg_file", "configs/dynamic_mapcycle.cfg", "Config file that will be used");
 
     char time[64]
     FormatTime(time, sizeof time, "Current time %H:%M at timezone: %z");
     PrintToServer("%s", time);
+
+    BuildPath(Path_SM, logDir, sizeof(logDir), "logs/dynamic_mapcycle.log");
 
     Handle recheckCfg = CreateTimer(3.0, Timer_Global, _, TIMER_REPEAT);
     TriggerTimer(recheckCfg);
@@ -43,7 +46,6 @@ public Action Timer_Global(Handle timer){
     char weekDayStr[4];
     FormatTime(weekDayStr, sizeof(weekDayStr), "%u");
     int currentWeekDay = StringToInt(weekDayStr, 10);
-
     do {
         char minPlayers[16];
         char maxPlayers[16];
@@ -68,10 +70,9 @@ public Action Timer_Global(Handle timer){
                 continue;
             }
         }
-
         if(!StrEqual(maxPlayers, "null") ){
             int iMaxPlayers = StringToInt(maxPlayers, 10);
-            if(!StrEqual(minPlayers, "null") && StringToInt(minPlayers, 10) > iMaxPlayers) {
+            if(!StrEqual(minPlayers, "null") && iMaxPlayers < StringToInt(minPlayers, 10)) {
                 LogError("Error at key %s. maxPlayers cannot be smaller than minPlayers", kName);
                 continue;
             }
@@ -157,7 +158,7 @@ public Action Timer_Global(Handle timer){
                 Kv_mapConfigs.GetString(subKName, mapName, sizeof(mapName), "null");
                 if(!StrEqual(mapName, "null")) {
                     // PrintToServer("%s", mapName);
-                    tmpMaplist.WriteLine("%s", mapName);
+                    bool write = tmpMaplist.WriteLine("%s", mapName);
                 }
             }
         } while (Kv_mapConfigs.GotoNextKey());
@@ -167,7 +168,6 @@ public Action Timer_Global(Handle timer){
         delete Kv_mapConfigs;
         return;
     } while (Kv_mapConfigs.GotoNextKey());
-
     LogError("No adequate mapcycle found for current server conditions.");
     delete Kv_mapConfigs;
     return;
