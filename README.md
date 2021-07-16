@@ -37,7 +37,7 @@ How to install dynamic_mapcycle? (Note: everything is pre-configured in the repo
 
 (The plugin generates a mapcycle according to the server state, the generated file is stored at this directory)
 
-4. Edit configs/mapchooser_extended/dynamic_mapcycle.cfg how you like.
+4. Edit configs/dynamic_mapcycle.cfg how you like.
 
 - dynamic_mapcycle.cfg has all the instructions on how to use it.
 
